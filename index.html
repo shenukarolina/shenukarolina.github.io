@@ -39,7 +39,6 @@
 	<link rel="stylesheet" href="css/vendor/owl.theme.default.min.css">
 	<!-- Lightbox -->
 	<link rel="stylesheet" href="css/vendor/lightbox.min.css">
-
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/main.css">
 
@@ -73,7 +72,7 @@
 								<a class="page-scroll" href="#gallery">Gallery</a>
 							</li> -->
 							<li>
-								<a class="page-scroll" href="#invitation">Contact</a>
+								<a class="page-scroll" href="#invitation">RSVP</a>
 							</li>
 							<!-- <li class="has-dropdown">
 								<a href="#">Pages</a>
@@ -722,7 +721,44 @@
 		</section> -->
 		<!-- Section Video invitation -->
 		<section id="invitation" class="section invitation section-gray">
+			<!-- GOOGLE FORM -->
 			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center heading">
+						<h2>RSVP</h2>
+							<p>You can RSVP using the form below or email us on shenukarolina@gmail.com</p>
+					</div>
+				</div>
+				<div class="row h-flex-md d-flex justify-content-center">
+					<div class="form-wrapper col-md-12">
+						<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/14lEYrhfvKa57Rp4Rc7R7x6blwDDzF0g2aypuGElMA5A/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+							<h4>Will you be there?</h4>
+							<input class="form-control" type="text" placeholder="YES/ NO" name="entry.526283642" id="entry.526283642"><br>
+							<p>First and last name:</p>
+							<input class="form-control" type="text" placeholder="" name="entry.1456208226" id="entry.1456208226"><br>
+							<p>Email*:</p>
+							<input class="form-control" type="email" placeholder=""name="entry.1239625302" id="entry.1239625302"><br>
+							<p>Contact Number:</p>
+							<input class="form-control" type="text" placeholder="" name="entry.450136776" id="entry.450136776"><br>
+							<p>How many attending guests are you filling this submission for (including yourself)?</p>
+							<input class="form-control" type="text" placeholder="" name="entry.709017419" id="entry.709017419"><br>
+							<p>Name(s) of guest(s) or RSVP for others invited in your group/ family:</p>
+							<input class="form-control" type="text" placeholder="" name="entry.2093247370" id="entry.2093247370"><br>
+							<p>Do you or anyone in your group have any special dietary requirements/ allergies?</p>
+							<input class="form-control" type="text" placeholder="YES/ NO (please state, if yes)" name="entry.1126355486" id="entry.1126355486"><br>
+							<p>Any other questions or comments?</p>
+							<input  class="form-control" type="text" placeholder="" name="entry.1037031548" id="entry.1037031548"><br>
+							<input class="btn btn-outline-black btn-lg send-button" type="submit" value="Submit">
+						  </form>
+						  
+						  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+					</div>
+				</div>
+			</div>
+			<br>				
+
+			<!-- TEMPLATE FORM -->
+			<!-- <div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center heading">
 						<h2>Video invitation</h2>
@@ -784,7 +820,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- Section banner-bottom -->
 		<section class="bg section banner banner_bottom">
 		    <div class="overlay"></div>
@@ -840,5 +876,14 @@
 	<script src="js/vendor/imagesloaded.pkgd.min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<!-- FORM -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript">var submitted=false;</script>
+	<script type="text/javascript">
+	$('#gform').on('submit', function(e) {
+  		$('#gform *').fadeOut(2000);
+  		$('#gform').prepend('Your submission has been sent. Thank you for your time!');
+  	});
+</script>
 </body>
 </html>
