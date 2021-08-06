@@ -878,7 +878,7 @@ img {
 	position: absolute;
 	content: " ";
 	width: 1px;
-	height: 65%;
+	height: 80%;
 	background-color: #ccc;
 	left: 30px;
 }
@@ -1876,7 +1876,7 @@ footer .copyright .block {
 	position: absolute;
 	content: " ";
 	width: 1px;
-	height: 65%;
+	height: 92%;
 	background-color: #ccc;
 	left: 30px;
 }
