@@ -342,7 +342,7 @@ img {
 }
 .navbar.affix {
 	position: fixed;
-	background: white;
+	background:white;
 	transition: all 0.5s ease;
 	border-bottom: 1px solid #ccc;
 }
@@ -391,6 +391,8 @@ img {
 .navbar .navbar-toggle .icon-bar {
 	background-color: #e9e9e9;
 }
+
+
 .navbar ul {
 	padding: 0;
 	margin: 2px 0 0 0;
@@ -570,7 +572,7 @@ img {
 .nav-toggle {
 	position: fixed;
 	right: 0px;
-	top: 10px;
+	/* top: 10px; */
 	z-index: 21;
 	padding: 6px 0 0 0;
 	display: block;
@@ -618,11 +620,11 @@ img {
 	transition: all .2s ease-out;
 }
 .nav-toggle.nav-white > i {
-	color: #FFFFFF;
-	background: #FFFFFF;
+	color: #dadada;
+	background: #dadada;
 }
 .nav-toggle.nav-white > i::before, .nav-toggle.nav-white > i::after {
-	background: #FFFFFF;
+	background: #dadada;
 }
 .nav-toggle i::before {
 	top: -7px;
